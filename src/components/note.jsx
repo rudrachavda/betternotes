@@ -25,7 +25,7 @@ const Note = () => {
           <div className='projectpagecontent'>
             <div className='projectpagecontentstructure'>
               <div className='contentTitle'>
-                <div className='Title'> 
+                <div className='Title'>
                   <h1
                     className='Titlestyle'
                     contentEditable
@@ -79,28 +79,6 @@ const Note = () => {
                     </p>
                   </div>
 
-                  <div className='contentTextwrap'>
-                    <p
-                      className='contentTextstyle'
-                      contentEditable
-                      suppressContentEditableWarning={true}
-                    >
-                      For my project, I chose to construct three picnic
-                      tables...
-                    </p>
-                  </div>
-
-                  <div className='contentTextwrap'>
-                    <p
-                      className='contentTextstyle'
-                      contentEditable
-                      suppressContentEditableWarning={true}
-                    >
-                      The process of building these tables involved careful
-                      planning...
-                    </p>
-                  </div>
-
                   <div className='contentCard'>
                     <div className='contentCardTitle'>
                       <h3
@@ -145,15 +123,26 @@ const Note = () => {
                     <div className='contentCardgradient' id='first'></div>
                   </div>
 
-                  <div className='contentTextwrap'>
-                    <p
-                      className='contentTextstyle'
-                      contentEditable
-                      suppressContentEditableWarning={true}
-                    >
-                      The first step in constructing the picnic tables was
-                      gathering...
-                    </p>
+                  <div className='contentseperator' id='beginning'>
+                    <div className='titleofseperator'>
+                      <h3
+                        className='titleofseperatorstyle'
+                        contentEditable
+                        suppressContentEditableWarning={true}
+                      >
+                        The Next Big Thing
+                      </h3>
+                    </div>
+
+                    <div className='dateofseperator'>
+                      <p
+                        className='dateofseperatorstyle'
+                        contentEditable
+                        suppressContentEditableWarning={true}
+                      >
+                        April 11th, 2025
+                      </p>
+                    </div>
                   </div>
 
                   <div className='contentTextwrap'>
@@ -162,28 +151,7 @@ const Note = () => {
                       contentEditable
                       suppressContentEditableWarning={true}
                     >
-                      With the workspace ready, I moved on to cutting...
-                    </p>
-                  </div>
-
-                  <div className='contentTextwrap'>
-                    <p
-                      className='contentTextstyle'
-                      contentEditable
-                      suppressContentEditableWarning={true}
-                    >
-                      Once the wood pieces were cut and aligned...
-                    </p>
-                  </div>
-
-                  <div className='contentTextwrap'>
-                    <p
-                      className='contentTextstyle'
-                      contentEditable
-                      suppressContentEditableWarning={true}
-                    >
-                      After completing the sanding process, we carefully
-                      aligned...
+                      Since 2017, I have been a part of the Boy Scouts...
                     </p>
                   </div>
                 </div>
