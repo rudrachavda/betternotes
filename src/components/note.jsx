@@ -31,7 +31,7 @@ const Note = () => {
                     contentEditable
                     suppressContentEditableWarning={true}
                   >
-                    Eagle Scout
+                    Title
                   </h1>
                 </div>
                 <div className='SubTitle'>
@@ -40,7 +40,7 @@ const Note = () => {
                     contentEditable
                     suppressContentEditableWarning={true}
                   >
-                    Detailed Project
+                    Date
                   </h3>
                 </div>
               </div>
@@ -52,7 +52,7 @@ const Note = () => {
                     contentEditable
                     suppressContentEditableWarning={true}
                   >
-                    The Next Big Thing
+                    Seperator Title...
                   </h3>
                 </div>
 
@@ -62,7 +62,7 @@ const Note = () => {
                     contentEditable
                     suppressContentEditableWarning={true}
                   >
-                    April 11th, 2025
+                    Seperator Date
                   </p>
                 </div>
               </div>
@@ -75,7 +75,7 @@ const Note = () => {
                       contentEditable
                       suppressContentEditableWarning={true}
                     >
-                      Since 2017, I have been a part of the Boy Scouts...
+                      Insert Text...
                     </p>
                   </div>
 
@@ -86,7 +86,7 @@ const Note = () => {
                         contentEditable
                         suppressContentEditableWarning={true}
                       >
-                        My Project
+                        Image title
                       </h3>
                     </div>
 
@@ -96,7 +96,7 @@ const Note = () => {
                         contentEditable
                         suppressContentEditableWarning={true}
                       >
-                        - Three Redwood Benches
+                        Image sub caption...
                       </p>
                     </div>
 
@@ -130,7 +130,7 @@ const Note = () => {
                         contentEditable
                         suppressContentEditableWarning={true}
                       >
-                        The Next Big Thing
+                        Seperator Title...
                       </h3>
                     </div>
 
@@ -140,7 +140,7 @@ const Note = () => {
                         contentEditable
                         suppressContentEditableWarning={true}
                       >
-                        April 11th, 2025
+                        Seperator Date
                       </p>
                     </div>
                   </div>
@@ -151,7 +151,7 @@ const Note = () => {
                       contentEditable
                       suppressContentEditableWarning={true}
                     >
-                      Since 2017, I have been a part of the Boy Scouts...
+                        Insert Text...
                     </p>
                   </div>
                 </div>
@@ -164,21 +164,21 @@ const Note = () => {
                     contentEditable
                     suppressContentEditableWarning={true}
                   >
-                    Timeline
+                    Section...
                   </p>
                   <p
                     className='contentTeamtext'
                     contentEditable
                     suppressContentEditableWarning={true}
                   >
-                    November 2023
+                    Section Items
                   </p>
                   <p
                     className='contentTeamtext'
                     contentEditable
                     suppressContentEditableWarning={true}
                   >
-                    March 2024
+                    Section Items
                   </p>
                 </div>
 
@@ -188,14 +188,21 @@ const Note = () => {
                     contentEditable
                     suppressContentEditableWarning={true}
                   >
-                    Role
+                    Section...
                   </p>
                   <p
                     className='contentTeamtext'
                     contentEditable
                     suppressContentEditableWarning={true}
                   >
-                    Project Lead
+                    Section Items
+                  </p>
+                  <p
+                    className='contentTeamtext'
+                    contentEditable
+                    suppressContentEditableWarning={true}
+                  >
+                    Section Items
                   </p>
                 </div>
 
@@ -205,28 +212,21 @@ const Note = () => {
                     contentEditable
                     suppressContentEditableWarning={true}
                   >
-                    Recognition
+                    Section...
                   </p>
                   <p
                     className='contentTeamtext'
                     contentEditable
                     suppressContentEditableWarning={true}
                   >
-                    Congressional
+                    Section Items
                   </p>
                   <p
                     className='contentTeamtext'
                     contentEditable
                     suppressContentEditableWarning={true}
                   >
-                    Presidential
-                  </p>
-                  <p
-                    className='contentTeamtext'
-                    contentEditable
-                    suppressContentEditableWarning={true}
-                  >
-                    City
+                    Section Items
                   </p>
                 </div>
 
@@ -236,23 +236,24 @@ const Note = () => {
                     contentEditable
                     suppressContentEditableWarning={true}
                   >
-                    Team
+                    Section...
                   </p>
                   <p
                     className='contentTeamtext'
                     contentEditable
                     suppressContentEditableWarning={true}
                   >
-                    Volunteers
+                    Section Items
                   </p>
                   <p
                     className='contentTeamtext'
                     contentEditable
                     suppressContentEditableWarning={true}
                   >
-                    Myself
+                    Section Items
                   </p>
                 </div>
+                
               </div>
             </div>
           </div>
