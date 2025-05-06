@@ -517,12 +517,11 @@ img {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 24px 24px 120px 24px;
-    margin: 16px 0;
+    padding: 24px;
+    margin: 20px 0;
     width: 100%;
     position: relative;
     min-height: fit-content;
-    overflow: hidden;
 }
 
 .contentCardgradient {
@@ -600,11 +599,11 @@ img {
 }
 
 .contentcardImagestyle {
-    width: 500px;
-    height: 400px;
-    /* max-width: 500px;
-    max-height: 400px; */
-    object-fit: cover;
+    /* width: 500px;
+    height: 400px; */
+    max-width: 810px;
+    max-height: 400px;
+    object-fit: contain;
     /* ^^^ change this parameter based on images */
     border-radius: 6px;
 }

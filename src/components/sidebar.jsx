@@ -47,7 +47,7 @@ const Sidebar = () => {
 
               <div className='lowsidebarcontent'>
                 <div className='contactcontainer'>
-                  <p className='interfacetext'> CONTACT </p>
+                  <p className='interfacetext'> Settings </p>
                 </div>
 
                 <div className='contactTags'>
@@ -57,7 +57,7 @@ const Sidebar = () => {
                         href='mailto:rudrabchavda@gmail.com'
                         className='tagstyle'
                       >
-                        Mail
+                        User
                       </a>
                     </p>
                   </div>
@@ -69,7 +69,7 @@ const Sidebar = () => {
                         rel='noopener noreferrer'
                         className='tagstyle'
                       >
-                        Github
+                        Theme
                       </a>
                     </p>
                   </div>
@@ -81,7 +81,7 @@ const Sidebar = () => {
                         rel='noopener noreferrer'
                         className='tagstyle'
                       >
-                        Linkedin
+                        About Us
                       </a>
                     </p>
                   </div>
@@ -92,7 +92,7 @@ const Sidebar = () => {
                         className='tagstyle'
                         download='RudraResume.pdf'
                       >
-                        read.cv
+                        Help
                       </a>
                     </p>
                   </div>
