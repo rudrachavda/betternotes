@@ -1,13 +1,34 @@
-<div className="contentseperator" id="beginning">
-    <div className="titleofseperator">
-        <h3 className="titleofseperatorstyle" contentEditable suppressContentEditableWarning={true} >
-            Separator
-        </h3>
-    </div>
+import React from 'react'
 
-    <div className="dateofseperator">
-        <p className="dateofseperatorstyle" contentEditable suppressContentEditableWarning={true} >
-            Date
+const SeparatorElement = ({ title, date }) => {
+  return (
+    <div className="contentseperator">
+      <div className="titleofseperator">
+        <h3 
+          className="titleofseperatorstyle" 
+          contentEditable 
+          suppressContentEditableWarning={true}
+          onBlur={(e) => {
+            // Handle title update if needed
+          }}
+        >
+          {title}
+        </h3>
+      </div>
+      <div className="dateofseperator">
+        <p 
+          className="dateofseperatorstyle" 
+          contentEditable 
+          suppressContentEditableWarning={true}
+          onBlur={(e) => {
+            // Handle date update if needed
+          }}
+        >
+          {date}
         </p>
+      </div>
     </div>
-</div>
+  )
+}
+
+export default SeparatorElement

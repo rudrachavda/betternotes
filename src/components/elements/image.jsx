@@ -1,39 +1,52 @@
-<div className="contentCard">
-    <div className="contentCardTitle">
+import React from 'react'
+
+const ImageElement = ({ title, subtitle }) => {
+  return (
+    <div className="contentCard">
+      <div className="contentCardTitle">
         <h3
-            className="contentCardTitlestyle"
-            contentEditable
-            suppressContentEditableWarning={true}
+          className="contentCardTitlestyle"
+          contentEditable
+          suppressContentEditableWarning={true}
+          onBlur={(e) => {
+            // Handle title update if needed
+          }}
         >
-            Image Title
+          {title}
         </h3>
-    </div>
-
-    <div className="contentCardSubtitle">
-        <p className="contentTextstyle" contentEditable suppressContentEditableWarning={true} >
-            Image Subcaption
+      </div>
+      <div className="contentCardSubtitle">
+        <p 
+          className="contentTextstyle" 
+          contentEditable 
+          suppressContentEditableWarning={true}
+          onBlur={(e) => {
+            // Handle subtitle update if needed
+          }}
+        >
+          {subtitle}
         </p>
+      </div>
+      <div className="contentcardimagecontainer">
+        <div className="contentcardImageratio">
+          <div className='contentcardImage'>
+            <input
+              type="file"
+              accept="image/*"
+              onChange={(e) => {
+                // Handle image upload if needed
+              }}
+              style={{ display: 'none' }}
+              id="image-upload"
+            />
+            <label htmlFor="image-upload" className="image-upload-label">
+              Click to upload image
+            </label>
+          </div>
+        </div>
+      </div>
     </div>
+  )
+}
 
-    {/* <div className="contentcardimagecontainer">
-                                            <div className="contentcardImageratio">
-                                                <div className='contentcardImage'>
-                                                    <img
-                                                        className='contentcardImagestyle'
-                                                        src='/images/eaglebench.jpg'
-                                                        alt='Project Image'
-                                                    />
-                                                </div>
-
-                                                <div className='contentcardImage'>
-                                                    <img
-                                                        className='contentcardImagestyle'
-                                                        src='/images/workdayone.jpg'
-                                                        alt='Project Image'
-                                                    />
-                                                </div>
-                                            </div>
-                                        </div> */}
-
-    {/* <div className='contentCardgradient' id='first'></div> */}
-</div>
+export default ImageElement
