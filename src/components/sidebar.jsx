@@ -24,26 +24,77 @@ const Sidebar = () => {
                                     <div className='topsidebartextcontainer'>
                                         <div className='aboutTextContainer'>
                                             <h3 id='title'>
-                                                <Link to='/'>About</Link>
+                                                <Link to='/'>Search</Link>
                                             </h3>
                                         </div>
 
                                         <div className='projectTextContainer'>
                                             <h3 id='title'>
-                                                <Link to='/maincanvas'> Note </Link>
+                                                <Link to='/maincanvas'> Home </Link>
                                             </h3>
                                         </div>
 
                                         <div className='CVTextContainer'>
                                             <h3 id='title'>
-                                                <Link to='/Experience'>CV</Link>
+                                                <Link to='/Experience'>Inbox</Link>
                                             </h3>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div className='midsidebarcontent'></div>
+                            <div className='midsidebarcontent'>
+
+                                <div class="interface">
+
+                                    <div class="interfacecontainer">
+                                        <p class="interfacetext"> Workspace</p>
+                                    </div>
+
+                                    <div class="interfacetags">
+                                        <div class="tag">
+                                            <p class="tagstyle">
+                                                <a> Note 1 </a>
+                                            </p>
+                                        </div>
+
+                                        <div class="tag">
+                                            <p class="tagstyle">
+                                                <a> Note 2 </a>
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="interface">
+
+                                    <div class="interfacecontainer">
+                                        <p class="interfacetext"> Private </p>
+                                    </div>
+
+                                    <div class="interfacetags">
+                                        <div class="tag">
+                                            <p class="tagstyle">
+                                                <a> College </a>
+                                            </p>
+                                        </div>
+
+                                        <div class="tag">
+                                            <p class="tagstyle">
+                                                <a> iPhone </a>
+                                            </p>
+                                        </div>
+
+                                        <div class="tag">
+                                            <p class="tagstyle">
+                                                <a> Better Notes </a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
 
                             <div className='lowsidebarcontent'>
                                 <div className='contactcontainer'>

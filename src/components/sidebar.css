@@ -157,7 +157,7 @@ div {
     flex: none;
     flex-direction: column;
     flex-wrap: nowrap;
-    /* gap: 32px; */
+    gap: 32px;
     height: min-content;
     justify-content: flex-start;
     overflow: visible;
@@ -260,10 +260,10 @@ div {
     position: relative;
     width: 100%;
 
-    border-style: solid;
+    /* border-style: solid;
     border-width: 0px 0px 0px 1px;
     padding-left: 10px;
-    border-color: #e1e4e8cc;
+    border-color: #e1e4e8cc; */
 }
 
 
@@ -300,8 +300,8 @@ div {
     flex-direction: column;
     flex-wrap: nowrap;
     gap: 40px;
-    /* height: min-content; */
-    height: 40vh;
+    height: min-content;
+    /* height: 40vh; */
     justify-content: flex-start;
     overflow: visible;
     padding: 0 32px;
@@ -436,7 +436,7 @@ div {
     height: min-content;
     justify-content: flex-start;
     overflow: hidden;
-    padding: 16px 24px 32px 32px;
+    padding: 0px 24px 32px 32px;
     position: relative;
     width: 100%;
 
