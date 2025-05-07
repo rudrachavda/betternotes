@@ -10,45 +10,34 @@ const Main = () => {
                         <div className="projectpagecontentstructure">
                             <div className="contentTitle">
                                 <div className="Title">
-                                    <h1
-                                        className="Titlestyle"
-                                        contentEditable
-                                        suppressContentEditableWarning={true}
-                                    >
+                                    <h1 className="Titlestyle" contentEditable suppressContentEditableWarning={true} >
                                         Title...
                                     </h1>
                                 </div>
                                 <div className="SubTitle">
-                                    <h3
-                                        className="SubTitlestyle"
-                                        contentEditable
-                                        suppressContentEditableWarning={true}
-                                    >
+                                    <h3 className="SubTitlestyle" contentEditable suppressContentEditableWarning={true} >
                                         Date
                                     </h3>
-                                </div>
-                            </div>
-
-                            <div className="contentseperator" id="beginning">
-                                <div className="titleofseperator">
-                                    <h3
-                                        className="titleofseperatorstyle"
-                                        contentEditable
-                                        suppressContentEditableWarning={true}
-                                    >
-                                        Separator
-                                    </h3>
-                                </div>
-
-                                <div className="dateofseperator">
-                                    <p className="dateofseperatorstyle" contentEditable suppressContentEditableWarning={true} >
-                                        Date
-                                    </p>
                                 </div>
                             </div>
 
                             <div className="contentText">
                                 <div className="contentTextcontainer">
+
+                                    <div className="contentseperator" id="beginning">
+                                        <div className="titleofseperator">
+                                            <h3 className="titleofseperatorstyle" contentEditable suppressContentEditableWarning={true} >
+                                                Separator
+                                            </h3>
+                                        </div>
+
+                                        <div className="dateofseperator">
+                                            <p className="dateofseperatorstyle" contentEditable suppressContentEditableWarning={true} >
+                                                Date
+                                            </p>
+                                        </div>
+                                    </div>
+
                                     <div className="contentTextwrap">
                                         <p className="contentTextstyle" contentEditable suppressContentEditableWarning={true} >
                                             Text...
@@ -114,11 +103,7 @@ const Main = () => {
                                     </div>
 
                                     <div className="contentTextwrap">
-                                        <p
-                                            className="contentTextstyle"
-                                            contentEditable
-                                            suppressContentEditableWarning={true}
-                                        >
+                                        <p className="contentTextstyle" contentEditable suppressContentEditableWarning={true} >
                                             Text...
                                         </p>
                                     </div>
@@ -127,97 +112,49 @@ const Main = () => {
 
                             <div className="contentTeam">
                                 <div className="contentTeamsection">
-                                    <p
-                                        className="contentTeamtitle"
-                                        contentEditable
-                                        suppressContentEditableWarning={true}
-                                    >
-                                        Section 1
+                                    <p className="contentTeamtitle" contentEditable suppressContentEditableWarning={true} >
+                                        Section
                                     </p>
-                                    <p
-                                        className="contentTeamtext"
-                                        contentEditable
-                                        suppressContentEditableWarning={true}
-                                    >
+                                    <p className="contentTeamtext" contentEditable suppressContentEditableWarning={true} >
                                         Section Item
                                     </p>
-                                    <p
-                                        className="contentTeamtext"
-                                        contentEditable
-                                        suppressContentEditableWarning={true}
-                                    >
+                                    <p className="contentTeamtext" contentEditable suppressContentEditableWarning={true} >
                                         Section Item
                                     </p>
                                 </div>
 
                                 <div className="contentTeamsection">
-                                    <p
-                                        className="contentTeamtitle"
-                                        contentEditable
-                                        suppressContentEditableWarning={true}
-                                    >
-                                        Section 2
+                                    <p className="contentTeamtitle" contentEditable suppressContentEditableWarning={true} >
+                                        Section
                                     </p>
-                                    <p
-                                        className="contentTeamtext"
-                                        contentEditable
-                                        suppressContentEditableWarning={true}
-                                    >
-                                        Project Lead
-                                    </p>
-                                </div>
-
-                                <div className="contentTeamsection">
-                                    <p
-                                        className="contentTeamtitle"
-                                        contentEditable
-                                        suppressContentEditableWarning={true}
-                                    >
-                                        Section 3
-                                    </p>
-                                    <p
-                                        className="contentTeamtext"
-                                        contentEditable
-                                        suppressContentEditableWarning={true}
-                                    >
+                                    <p className="contentTeamtext" contentEditable suppressContentEditableWarning={true} >
                                         Section Item
                                     </p>
-                                    <p
-                                        className="contentTeamtext"
-                                        contentEditable
-                                        suppressContentEditableWarning={true}
-                                    >
-                                        Section Item
-                                    </p>
-                                    <p
-                                        className="contentTeamtext"
-                                        contentEditable
-                                        suppressContentEditableWarning={true}
-                                    >
+                                    <p className="contentTeamtext" contentEditable suppressContentEditableWarning={true} >
                                         Section Item
                                     </p>
                                 </div>
 
                                 <div className="contentTeamsection">
-                                    <p
-                                        className="contentTeamtitle"
-                                        contentEditable
-                                        suppressContentEditableWarning={true}
-                                    >
-                                        Section 4
+                                    <p className="contentTeamtitle" contentEditable suppressContentEditableWarning={true} >
+                                        Section
                                     </p>
-                                    <p
-                                        className="contentTeamtext"
-                                        contentEditable
-                                        suppressContentEditableWarning={true}
-                                    >
+                                    <p className="contentTeamtext" contentEditable suppressContentEditableWarning={true} >
                                         Section Item
                                     </p>
-                                    <p
-                                        className="contentTeamtext"
-                                        contentEditable
-                                        suppressContentEditableWarning={true}
-                                    >
+                                    <p className="contentTeamtext" contentEditable suppressContentEditableWarning={true} >
+                                        Section Item
+                                    </p>
+                                </div>
+
+                                <div className="contentTeamsection">
+                                    <p className="contentTeamtitle" contentEditable suppressContentEditableWarning={true} >
+                                        Section
+                                    </p>
+                                    <p className="contentTeamtext" contentEditable suppressContentEditableWarning={true} >
+                                        Section Item
+                                    </p>
+                                    <p className="contentTeamtext" contentEditable suppressContentEditableWarning={true} >
                                         Section Item
                                     </p>
                                 </div>
