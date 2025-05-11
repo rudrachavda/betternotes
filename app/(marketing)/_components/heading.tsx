@@ -14,10 +14,10 @@ export const Heading = () => {
         <div className="max-w-3xl space-y-4">
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold">
                 Your Ideas, documents, and stuff. Unified. Welcome to <span
-                    className="underline">Botion</span>
+                    className="underline">Better Notes</span>
             </h1>
             <h3 className="text-base sm:text-cl md:text-2xl font-medium">
-                Botion is the Connected workspace where <br />
+                Better Notes is the Connected workspace where <br />
                 better, faster work happens.
             </h3>
             {isLoading && (
@@ -28,7 +28,7 @@ export const Heading = () => {
             {isAuthenticated && !isLoading && (
                 <Button asChild>
                     <Link href="/documents">
-                        Enter Botion
+                        Enter Better Notes
                         <ArrowRight className="h-4 w-4 ml-2" />
                     </Link>
                 </Button>
@@ -36,7 +36,7 @@ export const Heading = () => {
             {!isAuthenticated && !isLoading && (
                 <SignInButton mode="modal">
                     <Button>
-                        Get Botion Free
+                        Get Better Notes Free
                         <ArrowRight className="h-4 w-4 ml-2" />
                     </Button>
                 </SignInButton>
