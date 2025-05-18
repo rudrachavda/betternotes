@@ -1,15 +1,19 @@
 /* trunk-ignore-all(prettier) */
 "use client";
-
+// at 3:00:00
 import { cn } from "@/lib/utils";
 import { ChevronsLeft, MenuIcon } from "lucide-react";
 import { usePathname } from "next/navigation";
 import React, { ElementRef, useEffect, useRef, useState } from "react";
 import { useMediaQuery } from "usehooks-ts";
+import { UserItem } from "./user-item";
+import { useQuery } from "convex/react";
+import { api } from "@/convex/_generated/api";
 
 export const Navigation = () => {
-    const pathname = usePathname();
+    // const pathname = usePathname();
     const isMobile = useMediaQuery("(max-width: 768px)")
+    const documents = useQuery(api.documents.get);
 
     const isResizingRef = useRef(false);
     const sidebarRef = useRef<ElementRef<"aside">>(null);
@@ -17,7 +21,7 @@ export const Navigation = () => {
     const [isResetting, setIsResetting] = useState(false);
     const [isCollapsed, setIsCollapsed] = useState(isMobile);
 
-    useEffect (() => {
+    useEffect(() => {
         if (isMobile) {
             collapse();
         } else {
@@ -92,10 +96,10 @@ export const Navigation = () => {
         }
     };
 
-        // chat added, may or may not need to be changed later on
-        useEffect(() => {
-            setIsCollapsed(isMobile)
-        }, [isMobile])
+    // chat added, may or may not need to be changed later on
+    useEffect(() => {
+        setIsCollapsed(isMobile)
+    }, [isMobile])
 
     return (
         <>
@@ -119,18 +123,22 @@ export const Navigation = () => {
                 </div>
 
                 <div>
-                    <p> Action Items </p>
+                    <UserItem />
                 </div>
 
                 <div className="mt-4">
-                    <p>Documents</p>
+                    {documents?.map((document) => (
+                        <p key={document._id}>
+                            {document.title}
+                        </p>
+                    ))}
                 </div>
 
                 <div
                     onMouseDown={handleMouseDown}
                     onClick={() => { }}
                     className="opacity-0 group-hover/sidebar:opacity-100 transition cursor-ew-resize absolute h-full w-1 bg-primary/10 right-0 top-0"
-                    />
+                />
 
             </aside>
             <div
