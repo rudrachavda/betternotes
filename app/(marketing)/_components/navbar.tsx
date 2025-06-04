@@ -41,6 +41,7 @@ export const Navbar = () => {
                         <Button variant="ghost" size="sm" asChild>
                             <Link href="/documents">Enter Better Notes</Link>
                         </Button>
+                        // @ts-expect-error - signOutRedirectUrl is supported at runtime but not in type defs
                         <UserButton signOutRedirectUrl="/" />
                     </>
                 )}
