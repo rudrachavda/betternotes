@@ -3,7 +3,7 @@
 import { Id } from "@/convex/_generated/dataModel";
 import { cn } from "@/lib/utils"; 
 import { ChevronDown, ChevronRight, LucideIcon } from "lucide-react";
-import { isSea } from "node:sea";
+// import { isSea } from "node:sea";
 
 interface ItemProps {
     id?: Id<"documents">;
@@ -28,7 +28,7 @@ export const Item = ({
     documentIcon,
     isSearch,
     level = 0,
-    onExpand, 
+    // onExpand,
     expanded,
 }: ItemProps) => {
     const ChevronIcon = expanded ? ChevronDown : ChevronRight;
