@@ -1,19 +1,24 @@
 /* trunk-ignore-all(prettier) */
 "use client";
-// at 3:00:00
+// at 3:16:00
 import { cn } from "@/lib/utils";
-import { ChevronsLeft, MenuIcon } from "lucide-react";
+import { ChevronsLeft, MenuIcon, PlusCircle, Search, Settings } from "lucide-react";
 import { usePathname } from "next/navigation";
 import React, { ElementRef, useEffect, useRef, useState } from "react";
 import { useMediaQuery } from "usehooks-ts";
 import { UserItem } from "./user-item";
-import { useQuery } from "convex/react";
+import { Item } from "./item";
+import { useMutation, useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
+import { toast } from "sonner";
+
+
 
 export const Navigation = () => {
     // const pathname = usePathname();
     const isMobile = useMediaQuery("(max-width: 768px)")
     const documents = useQuery(api.documents.get);
+    const create = useMutation(api.documents.create);
 
     const isResizingRef = useRef(false);
     const sidebarRef = useRef<ElementRef<"aside">>(null);
@@ -96,6 +101,15 @@ export const Navigation = () => {
         }
     };
 
+    const handleCreate = () => {
+        const promise = create({ title: "Untitled" });
+        toast.promise(promise, {
+            loading: "Creating a new page...",
+            success: "Created Page",
+            error: "Failed Page Creation"
+        });
+    };
+
     // chat added, may or may not need to be changed later on
     useEffect(() => {
         setIsCollapsed(isMobile)
@@ -124,6 +138,21 @@ export const Navigation = () => {
 
                 <div>
                     <UserItem />
+                    <Item
+                    label="Search"
+                    icon={Search}
+                    isSearch
+                    onClick={() => { }}
+                    />
+                    <Item
+                    label="Settings"
+                    icon={Settings}
+                    onClick={() => { }}
+                    />
+                    <Item
+                    onClick={handleCreate}
+                    label="New Page"
+                    icon={PlusCircle} />
                 </div>
 
                 <div className="mt-4">
